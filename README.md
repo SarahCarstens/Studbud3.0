@@ -1,1 +1,2 @@
-# Studbud3.0
+# studbud
+Assignment 3 repository
