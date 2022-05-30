@@ -217,33 +217,47 @@ html, body {
   user-select: none;
 }
 
-.container {
+.study_page {
   width: 90%;
   grid-template: "Timer Timer Timer Timer" 1fr
                  "Dictionary Dictionary Music Music" 1fr
                  / 1fr 1fr 1fr 1fr auto;
   justify-content: center;
-  gap: 5%;
+  gap: 2%;
   display: grid;
 }
 
 .Timer {
+  height: 250px;
   background-color: #ffb703;
   border-radius: 25px;
   grid-area: Timer;
-  padding: 20%;
+  margin-top: 8%;
+  padding: 3%;
 }
 
 .Dictionary {
+  height: 250px;
   background-color: #fb8500;
   border-radius: 25px;
   grid-area: Dictionary;
+  padding: 3%;
 }
 
 .Music {
+  height: 250px;
   background-color: #8ecae6;
   border-radius: 25px;
   grid-area: Music;
+  padding: 3%;
+}
+
+.music_player {
+  width: 90%;
+  height: 200px;
+  border-radius: 25px;
+  margin-top: 1%;
+  margin-left: 5%;
 }
 
 /*# sourceMappingURL=study.1b2870d4.css.map */

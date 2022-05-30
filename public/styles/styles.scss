@@ -231,30 +231,51 @@ html, body {
 
 
 //study page
-.container {
+.study_page {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr auto; 
   grid-template-rows: 1fr 1fr auto; 
-  column-gap: 5%;
-  row-gap: 5%;
+  column-gap: 2%;
+  row-gap: 2%;
   width: 90%;
   justify-content: center;
   grid-template-areas: 
     "Timer Timer Timer Timer"
     "Dictionary Dictionary Music Music"; 
 }
+
+
 .Timer { grid-area: Timer; 
   background-color: #ffb703;
-  padding: 20%;
   border-radius: 25px;
-
+  margin-top: 8%;
+  padding: 3%;
+  height: 250px;
   
 }
+
 .Dictionary { grid-area: Dictionary; 
   background-color: #FB8500;
   border-radius: 25px;
+  padding: 3%;
+  height: 250px;
 }
+
 .Music { grid-area: Music; 
   background-color: #8ECAE6;
   border-radius: 25px;
+  padding: 3%;
+  height: 250px;
 }
+
+
+//music
+.music_player {
+  border-radius: 25px;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 90%;
+  height: 200px;
+}
+
+//dictionary

@@ -39,7 +39,8 @@ function dragDrop() {
     this.appendChild(draggableTodo);
     console.log("dropped");
 }
-/* modal */ const buttons = document.querySelectorAll("[data-target-modal]");
+// modal
+const buttons = document.querySelectorAll("[data-target-modal]");
 const close_modals = document.querySelectorAll(".close-modal");
 const overlay = document.getElementById("overlay");
 buttons.forEach((button)=>{
@@ -63,7 +64,8 @@ window.onclick = (event)=>{
         overlay.classList.remove("active");
     }
 };
-/* create task  */ const submit_tasks = document.getElementById("submit_task");
+// create task
+const submit_tasks = document.getElementById("submit_task");
 submit_tasks.addEventListener("click", createTask);
 function createTask() {
     const tasks_div = document.createElement("div");
@@ -73,7 +75,8 @@ function createTask() {
     tasks_div.appendChild(txt);
     tasks_div.classList.add("task");
     tasks_div.setAttribute("draggable", "true");
-    /* create span */ const span = document.createElement("span");
+    // create span
+    const span = document.createElement("span");
     const span_txt = document.createTextNode("\u00D7");
     span.classList.add("close");
     span.appendChild(span_txt);
@@ -93,6 +96,6 @@ close_buttons.forEach((button)=>{
     button.addEventListener("click", ()=>{
         button.parentElement.style.display = "none";
     });
-});
+}); //Dictionary
 
 //# sourceMappingURL=index.f3bd186e.js.map
