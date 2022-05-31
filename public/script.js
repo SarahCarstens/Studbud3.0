@@ -1,3 +1,4 @@
+//making it draggable
 const tasks = document.querySelectorAll(".task");
 const all_status = document.querySelectorAll(".status");
 let draggableTask = null;
@@ -45,7 +46,7 @@ function dragLeave() {
   
 function dragDrop() {
     this.style.border = "none";
-    this.appendChild(draggableTodo);
+    this.appendChild(draggableTask);
     console.log("dropped");
   }
 
@@ -58,6 +59,7 @@ buttons.forEach((button) => {
     button.addEventListener("click", () => {
         document.querySelector(button.dataset.targetModal).classList.add("active");
         overlay.classList.add("active");
+        console.log("pressed")
     });
 });
 
@@ -86,7 +88,8 @@ function createTask() {
     const tasks_div = document.createElement("div");
     const input_task_val = document.getElementById("input_task").value;
     const input_duedate_val = document.getElementById("input_duedate").value;
-    const txt = document.createTextNode("Task: " + input_task_val + ", Due Date: " + input_duedate_val);
+    const input_time_val = document.getElementById("input_time").value;
+    const txt = document.createTextNode("Task: " + input_task_val + ", Due Date: " + input_duedate_val + ", Completion: " + input_time_val + " hours");
   
     tasks_div.appendChild(txt);
     tasks_div.classList.add("task");
@@ -122,5 +125,9 @@ close_buttons.forEach((button) => {
     });
   });
 
+  
 
 //Dictionary
+
+
+//timer

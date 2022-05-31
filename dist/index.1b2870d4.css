@@ -109,14 +109,13 @@ h1 {
   border: none;
   border-radius: 20px;
   outline: none;
-  align-self: center;
   margin: .5rem 0;
   padding: .5%;
   font-size: 200%;
 }
 
 #add_button:hover {
-  background-color: #aaa;
+  background-color: #219ebc;
 }
 
 .task {
@@ -153,25 +152,26 @@ h1 {
 }
 
 .modal {
-  width: 450px;
-  z-index: 2;
+  width: 500px;
+  z-index: 3;
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  transition: top .5s ease-in-out;
+  border-radius: 25px;
+  margin-top: 10%;
+  transition: top .3s ease-in-out;
   position: fixed;
   top: -50%;
   left: 50%;
   transform: translate(-60%, -50%);
 }
 
-.modal .active {
+.modal.active {
   top: 15%;
 }
 
 .modal .header {
-  background-color: #0000000d;
-  border-bottom: 1px solid #ccc;
+  background-color: #219ebc;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   justify-content: space-between;
   align-items: center;
   padding: .5rem;
@@ -192,8 +192,23 @@ h1 {
   left: 0;
 }
 
-#overlay .active {
+#overlay.active {
   display: block;
+}
+
+#submit_task {
+  width: 30%;
+  background-color: #fd9e02;
+  border: none;
+  border-radius: 25px;
+  margin-top: 3%;
+  margin-left: 35%;
+  padding: 2%;
+  font-size: 100%;
+}
+
+#submit_task:hover {
+  background-color: #fb8500;
 }
 
 .input_text {
@@ -217,33 +232,47 @@ html, body {
   user-select: none;
 }
 
-.container {
+.study_page {
   width: 90%;
   grid-template: "Timer Timer Timer Timer" 1fr
                  "Dictionary Dictionary Music Music" 1fr
                  / 1fr 1fr 1fr 1fr auto;
   justify-content: center;
-  gap: 5%;
+  gap: 2%;
   display: grid;
 }
 
 .Timer {
+  height: 250px;
   background-color: #ffb703;
   border-radius: 25px;
   grid-area: Timer;
-  padding: 20%;
+  margin-top: 8%;
+  padding: 3%;
 }
 
 .Dictionary {
+  height: 250px;
   background-color: #fb8500;
   border-radius: 25px;
   grid-area: Dictionary;
+  padding: 3%;
 }
 
 .Music {
+  height: 250px;
   background-color: #8ecae6;
   border-radius: 25px;
   grid-area: Music;
+  padding: 3%;
+}
+
+.music_player {
+  width: 95%;
+  height: 200px;
+  border-radius: 25px;
+  margin-top: 1%;
+  margin-left: 2.5%;
 }
 
 /*# sourceMappingURL=index.1b2870d4.css.map */

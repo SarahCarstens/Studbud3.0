@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon-38.png" type="image/x-icon">
     <title>StudBud | Tasks</title>
     <link rel="stylesheet" href="styles/styles.scss"/>
     
@@ -20,21 +21,26 @@
     <!--Modal-->
     <div class="modal" id="task_form">
         <div class="header">
-            <div class="title">Add</div>
+            <div class="title"></div>
             <button class="button close-modal">&times;</button>
         </div>
         <div class="body">
             Task: <input type="text" class="input_text" id="input_task"/>
-            Due Date: <input type="text" class="input_text" id="input_duedate"/>
+            Due Date: <input type="date" class="input_text" id="input_duedate"/>
+            Estimated time to complete (hours): <input type="text" class="input_text" id="input_time"/>
+
             <input type="submit" value="Add" id="submit_task"/>
         </div>
     </div>
     <!--Containers-->
     <div class="task_container">
         <div class="status" id="no_status">
+            <h1></h1>
             <button id="add_button" data-target-modal="#task_form">+</button>
             <div class="task" draggable="true">
-                Task
+                Task: Web Design
+                Due: 03/06/2022
+                Completion: 8 hours
                 <span class="close">&times;</span>
             </div>
         </div>
@@ -48,7 +54,9 @@
             <h1 class="task_head">Low Priority</h1>
         </div>
     </div>
+
     <div id="overlay"></div>
-    </body>
+
     <script src="script.js"></script>
+    </body>
 </html>

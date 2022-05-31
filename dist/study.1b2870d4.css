@@ -116,7 +116,7 @@ h1 {
 }
 
 #add_button:hover {
-  background-color: #aaa;
+  background-color: #219ebc;
 }
 
 .task {
@@ -154,7 +154,7 @@ h1 {
 
 .modal {
   width: 450px;
-  z-index: 2;
+  z-index: 99999;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -253,11 +253,11 @@ html, body {
 }
 
 .music_player {
-  width: 90%;
+  width: 95%;
   height: 200px;
   border-radius: 25px;
   margin-top: 1%;
-  margin-left: 5%;
+  margin-left: 2.5%;
 }
 
 /*# sourceMappingURL=study.1b2870d4.css.map */
