@@ -7,31 +7,78 @@
     <link rel="icon" href="/Favicon-38.c9ff1f11.png" type="image/x-icon">
     <title>StudBud | Study</title>
     <link rel="stylesheet" href="/index.1b2870d4.css">
+  
 </head>
 
 <!--Nav Bar-->
 <div class="navBar">
     <a class="current" href="/study.html">Study</a>
     <a href="/index.html">Tasks</a>
+    <a href="/pomodoro.html">Pomodoro</a>
+    
  </div>
 
 
 <div class="study_page">
 <!--Timer-->
+
   <div class="Timer">
-    <p>hello</p>
+    <div class="display_timer">
+        00 : 00 : 00 : 000
+    </div>
+
+    <div class="timer_buttons">
+        <button id="pause">Stop</button>
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+      </div>
+   <script src="/study.f565f920.js"></script>   
+    
+
+
   </div>
+
+<!--Music Player-->
+<div class="Music">
+  <div class="music">
+      <iframe class="music_player" src="https://open.spotify.com/embed/playlist/6mRYwA32FHVrHHy6lW1bAu?utm_source=generator&theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        
+    </div>
+</div>
+
+
+
   <!--Dictionary-->
   <div class="Dictionary">
-      <p>hellp</p>
-  </div>
-  <!--Music Player-->
-  <div class="Music">
-    <div class="music">
-        <iframe class="music_player" src="https://open.spotify.com/embed/playlist/6mRYwA32FHVrHHy6lW1bAu?utm_source=generator&theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-          
+      <div class="main">
+        <div class="search">
+          <input type="text" placeholder="Search any word">
+          <i class="fas fa-search"></i>
+          <span><b>X</b></span>
+        </div>
+        <p class="info_text">Type any word and press enter</p>
+        <ul>
+          <li class="word">
+            <div class="head">
+              <p><b>__</b></p>
+              <span>_ _</span>
+            </div>
+            <i class="fas fa-volume-up"></i>
+          </li>
+          <li class="content">
+            <div class="meaning">
+              <div class="details">
+                <p><b>Meaning</b></p>
+                <span>___</span>
+              </div>
+            </div></li>
+          </ul></div>
+        
       </div>
+      <script src="/study.129e2507.js"></script>
   </div>
-</div>
-<script src="/study.f3bd186e.js"></script>
+
+  
+
+
 </html>

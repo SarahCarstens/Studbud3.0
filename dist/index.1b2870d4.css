@@ -125,7 +125,7 @@ h1 {
   align-items: center;
   margin: .5rem 0;
   padding: .5rem 1rem;
-  font-size: 110%;
+  font-size: 100%;
   display: flex;
   position: relative;
   box-shadow: 0 0 0 1px #0f0f0f1a, 0 2px 4px #0f0f0f1a;
@@ -238,30 +238,13 @@ html, body {
                  "Dictionary Dictionary Music Music" 1fr
                  / 1fr 1fr 1fr 1fr auto;
   justify-content: center;
-  gap: 2%;
+  gap: 3% 2%;
   display: grid;
-}
-
-.Timer {
-  height: 250px;
-  background-color: #ffb703;
-  border-radius: 25px;
-  grid-area: Timer;
-  margin-top: 8%;
-  padding: 3%;
-}
-
-.Dictionary {
-  height: 250px;
-  background-color: #fb8500;
-  border-radius: 25px;
-  grid-area: Dictionary;
-  padding: 3%;
 }
 
 .Music {
   height: 250px;
-  background-color: #8ecae6;
+  background-color: #fb8500;
   border-radius: 25px;
   grid-area: Music;
   padding: 3%;
@@ -273,6 +256,155 @@ html, body {
   border-radius: 25px;
   margin-top: 1%;
   margin-left: 2.5%;
+}
+
+.Timer {
+  height: 250px;
+  background-color: #ffb703;
+  border-radius: 25px;
+  grid-area: Timer;
+  margin-top: 8%;
+  padding: 3%;
+}
+
+.timer_buttons {
+  width: 90%;
+  justify-content: space-around;
+  margin: -2% auto 0;
+  display: flex;
+}
+
+.timer_buttons button {
+  width: 120px;
+  height: 45px;
+  color: #023046;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+}
+
+.timer_buttons button:hover {
+  width: 120px;
+  height: 45px;
+  color: #023046;
+  cursor: pointer;
+  background-color: #fb8500;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+}
+
+.display_timer {
+  width: 92%;
+  color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+  font-family: futura;
+  font-size: 400%;
+  display: flex;
+  position: relative;
+  left: 4%;
+}
+
+.Dictionary {
+  height: 250px;
+  background-color: #8ecae6;
+  border-radius: 25px;
+  grid-area: Dictionary;
+  padding: 3%;
+}
+
+.main {
+  width: 90%;
+  justify-content: center;
+  margin-left: 4%;
+}
+
+.word .head {
+  margin-top: -12%;
+}
+
+.main .search {
+  position: relative;
+}
+
+.search input {
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  padding: 0 41px;
+  font-size: 100%;
+}
+
+.search input:focus {
+  border: 1px solid #126782;
+  padding: 0 41px;
+}
+
+.search input::placeholder {
+  color: #a3a3a3;
+}
+
+.search i {
+  pointer-events: none;
+  font-size: 90%;
+  left: 20%;
+}
+
+.search :where(i, span) {
+  cursor: pointer;
+  color: #fff;
+  margin-left: 2%;
+  font-size: 150%;
+  font-weight: 400;
+  position: absolute;
+  top: 20%;
+}
+
+.main .info_text {
+  color: #fff;
+  margin: 1% 0 -10px;
+}
+
+.main.active .info-text {
+  display: none;
+}
+
+.main ul {
+  opacity: 0;
+  color: #fff;
+  overflow-y: hidden;
+}
+
+.main.active ul {
+  opacity: 1;
+}
+
+.main ul li {
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+  list-style: none;
+  display: flex;
+}
+
+.content .synonyms .list {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.content .synonyms span {
+  cursor: pointer;
+  margin-right: 10%;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=index.1b2870d4.css.map */

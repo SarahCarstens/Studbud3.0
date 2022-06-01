@@ -136,7 +136,7 @@ h1 {
       rgba(15, 15, 15, 0.1) 0px 2px 4px;
     border-radius: 10px;
     padding: 0.5rem 1rem;
-    font-size: 110%;
+    font-size: 100%;
     margin: 0.5rem 0;
   }
   
@@ -256,7 +256,7 @@ html, body {
   grid-template-columns: 1fr 1fr 1fr 1fr auto; 
   grid-template-rows: 1fr 1fr auto; 
   column-gap: 2%;
-  row-gap: 2%;
+  row-gap: 3%;
   width: 90%;
   justify-content: center;
   grid-template-areas: 
@@ -265,24 +265,8 @@ html, body {
 }
 
 
-.Timer { grid-area: Timer; 
-  background-color: #ffb703;
-  border-radius: 25px;
-  margin-top: 8%;
-  padding: 3%;
-  height: 250px;
-  
-}
-
-.Dictionary { grid-area: Dictionary; 
-  background-color: #FB8500;
-  border-radius: 25px;
-  padding: 3%;
-  height: 250px;
-}
-
 .Music { grid-area: Music; 
-  background-color: #8ECAE6;
+  background-color: #FB8500;
   border-radius: 25px;
   padding: 3%;
   height: 250px;
@@ -300,5 +284,163 @@ html, body {
 
 //TIMER
 
+.Timer { grid-area: Timer; 
+  background-color: #ffb703;
+  border-radius: 25px;
+  margin-top: 8%;
+  padding: 3%;
+  height: 250px;
+  
+}
+
+.timer_buttons{
+  width: 90%;
+  margin: 5px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -2%;
+}
+
+.timer_buttons button{
+  width: 120px;
+  height: 45px;
+  background-color: #fff;
+  color: #023046;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.timer_buttons button:hover{
+  width: 120px;
+  height: 45px;
+  background-color: #FB8500;
+  color: #023046;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.display_timer{
+  position: relative;
+  width: 92%;
+  left: 4%;
+  padding: 40px 0;
+  font-family: 'futura';
+  color: rgb(255, 255, 255);
+  font-size: 400%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
 
 //dictionary
+
+.Dictionary { grid-area: Dictionary; 
+  background-color: #8ECAE6;
+  border-radius: 25px;
+  padding: 3%;
+  height: 250px;
+}
+
+.main{
+  margin-left: 4%;
+  width: 90%;
+  justify-content: center;
+}
+
+.word .head{
+  margin-top: -12%;
+
+}
+
+.main .search{
+  position: relative;
+}
+
+.search input{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  padding: 0 41px;
+  font-size: 100%;
+  border-radius: 15px;
+  border: none;
+}
+
+.search input:focus{
+  padding: 0 41px;
+  border: 1px solid #126782
+}
+
+.search input::placeholder{
+  color: #a3a3a3
+}
+
+.search i{
+  left: 20%;
+  pointer-events: none;
+  font-size: 90%;
+}
+
+
+.search :where(i, span){
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  color: #ffff;
+  margin-left: 2%;
+  font-weight: 400;
+  font-size: 150%;
+}
+
+.main .info_text{
+  color: #ffff;
+  margin: 1% 0 -10px;
+}
+
+.main.active .info-text{
+  display: none;
+}
+
+.main ul{
+  opacity: 0;
+  overflow-y: hidden;
+  color: #ffff
+}
+
+.main.active ul{
+  opacity: 1;
+
+}
+
+.main ul li{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-top: 1%;
+  justify-content: space-between;
+  height: fit-content;
+ 
+}
+
+.content .synonyms .list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .synonyms span{
+  cursor: pointer;
+  margin-right: 10%;
+  text-decoration: underline;
+}
+

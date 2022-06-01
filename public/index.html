@@ -15,6 +15,7 @@
 <nav class="navBar">
     <a href="study.html">Study</a>
     <a class="current" href="index.html">Tasks</a>
+    <a href="pomodoro.html">Pomodoro</a>
 </nav>
 
 <body>
@@ -27,7 +28,7 @@
         <div class="body">
             Task: <input type="text" class="input_text" id="input_task"/>
             Due Date: <input type="date" class="input_text" id="input_duedate"/>
-            Estimated time to complete (hours): <input type="text" class="input_text" id="input_time"/>
+            Estimated time to complete (hours): <input type="number" class="input_text" id="input_time"/>
 
             <input type="submit" value="Add" id="submit_task"/>
         </div>
@@ -38,9 +39,9 @@
             <h1></h1>
             <button id="add_button" data-target-modal="#task_form">+</button>
             <div class="task" draggable="true">
-                Task: Web Design
-                Due: 03/06/2022
-                Completion: 8 hours
+               <p>Task: Web Design
+               Due: 03/06/2022
+               Completion: 8 hours</p>
                 <span class="close">&times;</span>
             </div>
         </div>
