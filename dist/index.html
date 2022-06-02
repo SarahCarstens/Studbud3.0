@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--setting up website-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--adding favicon-->
     <link rel="icon" href="/Favicon-38.c9ff1f11.png" type="image/x-icon">
+    <!--page title-->
     <title>StudBud | Tasks</title>
     <link rel="stylesheet" href="/index.1b2870d4.css">
     
 
 </head>
 
-<!--Nav Bar-->
+<!--Nav Bar which shows current page-->
 <nav class="navBar">
     <a href="/study.html">Study</a>
     <a class="current" href="/index.html">Tasks</a>
@@ -20,31 +23,36 @@
 
 <body>
     <!--Modal-->
+    <!--this creates a small window which pops up to input the text for the task list-->
     <div class="modal" id="task_form">
         <div class="header">
             <div class="title"></div>
-            <button class="button close-modal">&times;</button>
+            <button class="button close_modal">&times;</button>
         </div>
+    <!--creating the text and input fields for the modal-->
         <div class="body">
             Task: <input type="text" class="input_text" id="input_task">
             Due Date: <input type="date" class="input_text" id="input_duedate">
             Estimated time to complete (hours): <input type="number" class="input_text" id="input_time">
-
+    <!--submitting the task to the kan ban board-->
             <input type="submit" value="Add" id="submit_task">
         </div>
     </div>
     <!--Containers-->
     <div class="task_container">
+        <!--creating the container which the creates the left hand side task list-->
         <div class="status" id="no_status">
             <h1></h1>
             <button id="add_button" data-target-modal="#task_form">+</button>
             <div class="task" draggable="true">
+                <!--setting up a task to appear whenever the user reloads the page-->
                <p>Task: Web Design
                Due: 03/06/2022
                Completion: 8 hours</p>
                 <span class="close">&times;</span>
             </div>
         </div>
+        <!--Kan Ban board columns-->
         <div class="status">
             <h1 class="task_head">High Priority</h1>
         </div>
@@ -55,9 +63,11 @@
             <h1 class="task_head">Low Priority</h1>
         </div>
     </div>
-
+    <!--adding an overlay for when the modal is active-->
     <div id="overlay"></div>
 
     <script src="/index.f3bd186e.js"></script>
     </body>
 </html>
+
+<!--(Payenda, 2020)-->

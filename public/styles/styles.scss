@@ -1,4 +1,6 @@
-//navbar
+//Nav Bar
+
+//fixing it to the top of the screen
 .navBar {
     background-color: #023046;
     overflow: hidden;
@@ -8,6 +10,7 @@
     
 }
 
+//styling the text to the center
 .navBar a {
     float: right;
     color: #0000;
@@ -16,19 +19,23 @@
     text-decoration: none;
     font-size: 170%;
     color:rgb(255, 255, 255);
+    margin-right: 12%;
 }
 
+//changing the look of each button when the mouse hovers over it
 .navBar a:hover {
     background-color: #126782;
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
+//showing the current tab the user is on in the nav bar
 .navBar .current {
     background-color: #fd9e02;
     color: rgb(255, 255, 255);
 }
 
+//setting font type
 .navBar {
     font-family: "Futura";
     font-style: normal;
@@ -36,11 +43,13 @@
 }
 
 
+//Tasks Page
 //KanBan Board
 * {
     box-sizing: border-box;
   }
 
+//styling the body to the center
 body {
     background: white;
     color: black;
@@ -51,17 +60,14 @@ body {
     align-items: center;
 }
 
-h1 {
-    color: black;
-    font-family: 'Futura', sans-serif;
-}
-
+//setting the task container
 .task_container {
     width: 1000px;
     height: 80vh;
     display: flex;
   }
 
+  //setting up each box in the for the kan ban board
 .status {
     width: 25%;
     background-color: #f3f3f3;
@@ -69,6 +75,7 @@ h1 {
     padding: 60px 1rem 0.5rem;
   }
  
+  //making each child a different colour for each priority box
 .status:nth-child(1) {
     background-color: #e9e9e96b;
     border-radius: 25px;
@@ -95,6 +102,7 @@ h1 {
   }
 
   
+  //the title for each kan ban column
 .status h1 {
     position: absolute;
     text-align: center;
@@ -110,6 +118,7 @@ h1 {
   }
 
 
+  //add button to add new tasks
 #add_button {
     padding: 0.5%;
     background-color: #ffb703;
@@ -122,10 +131,12 @@ h1 {
     cursor: pointer;
   }
 
+  //hovering over the add button
 #add_button:hover {
     background-color: #219EBC;
   }
 
+  //styling for the draggable task
 .task {
     display: flex;
     justify-content: space-between;
@@ -140,6 +151,7 @@ h1 {
     margin: 0.5rem 0;
   }
   
+  //close button on the task
 .task .close {
     position: absolute;
     right: 1rem;
@@ -149,19 +161,23 @@ h1 {
     cursor: pointer;
   }
   
+  //hovering over the close task button
 .task .close:hover {
     color: #343444;
   }
 
-  /* modal */
 
-.close-modal {
+  //Modal
+
+  //closing the modal
+.close_modal {
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
   }
   
+//styling and traslating the modal
 .modal {
     width: 500px;
     margin-top: 10%;
@@ -175,10 +191,12 @@ h1 {
     background-color: rgb(255, 255, 255);
   }
   
+//when the modal appears it is set to active
 .modal.active {
     top: 15%;
   }
   
+//styling the modal
 .modal .header {
     display: flex;
     justify-content: space-between;
@@ -193,6 +211,7 @@ h1 {
     padding: 0.75rem;
   }
   
+//adding an overlay to darken the background of the page while modal is active
 #overlay {
     display: none;
     position: fixed;
@@ -208,6 +227,7 @@ h1 {
     
   }
 
+  //button to add tasks
 #submit_task {
   border-radius: 25px;
   margin-left: 35%;
@@ -220,10 +240,12 @@ h1 {
 
 }
 
+//hovering over the submit task button
 #submit_task:hover {
   background-color: #FB8500;
 }
 
+//inputing a n ew task into the modal
 .input_text
 {
   padding: 0.5rem 1rem;
@@ -231,26 +253,17 @@ h1 {
   margin: 0.25rem;
 }
 
-#task_submit {
-  padding: 2%;
-  width: 100%;
-  margin: 0.25rem;
-}
-
-#task_submit {
-  background-color: #3694ce;
-  color: #f3f3f3;
-  font-size: 1.25rem;
-  border: none;
-}
 
 html, body {
     user-select: none;
   }
 
 
+
   
-//study page
+//Study Page
+
+//setting up a grid for the study page
 .study_page {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr auto; 
@@ -265,6 +278,7 @@ html, body {
 }
 
 
+//music section of the grid
 .Music { grid-area: Music; 
   background-color: #FB8500;
   border-radius: 25px;
@@ -273,7 +287,7 @@ html, body {
 }
 
 
-//music
+//formatting the embedded music player
 .music_player {
   border-radius: 25px;
   margin-left: 2.5%;
@@ -282,8 +296,9 @@ html, body {
   height: 200px;
 }
 
-//TIMER
 
+//Timer
+//timer section of grid
 .Timer { grid-area: Timer; 
   background-color: #ffb703;
   border-radius: 25px;
@@ -293,6 +308,7 @@ html, body {
   
 }
 
+//styling the timer buttons
 .timer_buttons{
   width: 90%;
   margin: 5px auto 0 auto;
@@ -313,7 +329,7 @@ html, body {
   outline: none;
 }
 
-
+//timer buttons when hovered
 .timer_buttons button:hover{
   width: 120px;
   height: 45px;
@@ -326,7 +342,7 @@ html, body {
   outline: none;
 }
 
-
+//styling the numbers of the timer
 .display_timer{
   position: relative;
   width: 92%;
@@ -343,8 +359,8 @@ html, body {
 
 
 
-//dictionary
-
+//Dictionary
+//setting up grid area for dictionary
 .Dictionary { grid-area: Dictionary; 
   background-color: #8ECAE6;
   border-radius: 25px;
@@ -352,21 +368,25 @@ html, body {
   height: 250px;
 }
 
+//creating margins and width of dictionary
 .main{
   margin-left: 4%;
   width: 90%;
   justify-content: center;
 }
 
+//moving the definition to the top of the box
 .word .head{
   margin-top: -12%;
 
 }
 
+//search box
 .main .search{
   position: relative;
 }
 
+//the input box of the dictionary
 .search input{
   height: 50px;
   width: 100%;
@@ -377,22 +397,25 @@ html, body {
   border: none;
 }
 
+//when the user has selected the input box the border shows a visual cue
 .search input:focus{
   padding: 0 41px;
   border: 1px solid #126782
 }
 
+//setting the placeholder text colour
 .search input::placeholder{
   color: #a3a3a3
 }
 
+//info text
 .search i{
   left: 20%;
   pointer-events: none;
   font-size: 90%;
 }
 
-
+//info words
 .search :where(i, span){
   cursor: pointer;
   position: absolute;
@@ -403,26 +426,30 @@ html, body {
   font-size: 150%;
 }
 
+//info text
 .main .info_text{
   color: #ffff;
   margin: 1% 0 -10px;
 }
 
+//hiding info text when nothing has been entered
 .main.active .info-text{
   display: none;
 }
 
+//hiding definition headings and text
 .main ul{
   opacity: 0;
   overflow-y: hidden;
   color: #ffff
 }
 
+//showing text once word has been entered
 .main.active ul{
   opacity: 1;
-
 }
 
+//putting the main list of definitions in the center
 .main ul li{
   display: flex;
   list-style: none;
@@ -433,14 +460,39 @@ html, body {
  
 }
 
-.content .synonyms .list{
-  display: flex;
-  flex-wrap: wrap;
+
+
+//Pomodoro
+//styling the main box
+#box {
+  background: #219EBC;
+  border-radius: 25px;
+  margin-left: -100%;
+  width: 300%;
+  height: 150%;
+  text-align: center;
+  padding: 30%;
+
 }
 
-.content .synonyms span{
+//setting timer font size and text colour
+#timer{
+  font-size: 700%;
+  color: #ffff;
+
+}
+
+//styling the timer buttons
+#buttons button{
+  width: 20%;
+  height: 10%;
+  padding: 2%;
+  margin-top: 5%;
+  border: none;
+  background-color: #fd9e02;
+  color: #ffff;
+  border-radius: 25px;
+  margin-left: 2%;
+  font-size: 140%;
   cursor: pointer;
-  margin-right: 10%;
-  text-decoration: underline;
 }
-

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--Setting up the file-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,17 +22,18 @@
 
 <div class="study_page">
 <!--Timer-->
-
+<!--Creating the display for the timer-->
   <div class="Timer">
     <div class="display_timer">
         00 : 00 : 00 : 000
     </div>
-
+    <!--Adding pause start and reset buttons to the timer-->
     <div class="timer_buttons">
         <button id="pause">Stop</button>
         <button id="start">Start</button>
         <button id="reset">Reset</button>
       </div>
+    <!--Setting the source as the timer java file-->
    <script src="timer.js"></script>   
     
 
@@ -41,6 +43,7 @@
 <!--Music Player-->
 <div class="Music">
   <div class="music">
+    <!--Embedding a playlist from spotify using the iframe component-->
       <iframe class="music_player"
         src="https://open.spotify.com/embed/playlist/6mRYwA32FHVrHHy6lW1bAu?utm_source=generator&theme=0"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -54,22 +57,26 @@
   <div class="Dictionary">
       <div class="main">
         <div class="search">
+          <!--Setting a placeholder to for the search bar-->
           <input type="text" placeholder="Search any word">
-          <i class="fas fa-search"></i>
+          <!--setting X as a clear button -->
           <span><b>X</b></span>
         </div>
+        <!--Adding info text to show the user how the dictionary works-->
         <p class="info_text">Type any word and press enter</p>
         <ul>
           <li class="word">
             <div class="head">
+              <!--Setting blank placeholders which will be filled with the api info-->
               <p><b>__</b></p>
               <span>_ _</span>
             </div>
-            <i class="fas fa-volume-up"></i>
           </li>
+          <!--Creating the meaning section of the dictionary-->
           <li class="content">
             <div class="meaning">
               <div class="details">
+                <!--Once again setting place holders to be filled in by the api-->
                 <p><b>Meaning</b></p>
                 <span>___</span>
               </div>
@@ -77,6 +84,7 @@
           </div>
         </ul>
       </div>
+      <!--Linking to the dictionary java file-->
       <script src="dictionary.js"></script>
   </div>
 
@@ -84,3 +92,9 @@
 
 </div>
 </html>
+
+
+<!--
+(CodingNepal, 2021)
+("Create a Simple Stopwatch using JavaScript (Tutorial + Code)", 2021)
+-->
